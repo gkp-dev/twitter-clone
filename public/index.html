@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/twiiter-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-twitterBlue flex text-poppins">
+
+    <!--NavBar-->
+    <section class=" text-center pt-2 w-2/12 h-screen border-r border-gray-700 md:w-1/12">
+        <div class="relative w-full h-full">
+            <!--Icon-->
+            <div>
+                <i class="my-2 fab fa-twitter text-3xl text-white cursor-pointer transition-colors duration-300 ease-in-out hover:text-blue-400"></i>
+            </div>
+
+            <div class="text-3xl text-blue-400 cursor-pointer">
+                <i class="my-2 fas fa-home"></i>
+                <span class="text-xl font-bold hidden">Home</span>
+            </div>
+
+            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+                <i class="my-2 fas fa-hashtag "></i>
+                <span class="text-xl font-bold hidden">Explore</span>
+            </div>
+
+
+            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+                <i class="my-2 fas fa-bell "></i>
+                <span class="text-xl font-bold hidden">Notification</span>
+            </div>
+
+            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+                <i class="my-2 fas fas fa-envelope "></i>
+                <span class="text-xl font-bold hidden">Messages</span>
+            </div>
+
+            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+                <i class="my-2 fas fa-file-alt "></i>
+                <span class="text-xl font-bold hidden">Lists</span>
+            </div>
+
+
+            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+                <i class="my-2 fas fa-user "></i>
+                <span class="text-xl font-bold hidden">Profile</span>
+            </div>
+
+            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+                <i class="my-2 fas fa-ellipsis-h "></i>
+                <span class="text-xl font-bold hidden">More</span>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--Tweet-->
+    <section class="w-10/12 md:w-7/12">
+        <!--Header-->
+        <div class="p-2 flex justify-between border-b border-gray-50">
+            <h2 class="font-bold text-white text-xl">Home</h2>
+            <div>
+                <svg class="w-6 h-6 text-blue-400 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+            </div>
+
+        </div>
+
+        <!--Writing a tweet-->
+
+        <!---->
+        <div class="flex p-2">
+            <div id="user-icon" class="rounded-full bg-people bg-cover w-12 h-12 mr-2"></div>
+            <input class="bg-transparent text-white" type="text" placeholder="What's up?">
+        </div>
+        <!---->
+        <div class="p-2 flex justify-between">
+            <!--Icon-->
+            <div class="relative left-2">
+                <i class="fas fa-image text-xl text-blue-400 relative top-little mr-1 cursor-pointer"></i>
+                <i class="fas fa-share-square text-xl text-blue-400  mr-1 cursor-pointer"></i>
+                <i class="far fa-smile text-xl text-blue-400  relative top-little mr-1 cursor-pointer"></i>
+                <i class="far fa-calendar-plus text-xl text-blue-400 cursor-pointer"></i>
+            </div>
+
+            <!--Tweet Btn-->
+            <div class="bg-blue-400 text-white font-bold text-lg w-20 text-center rounded-3xl cursor-pointer">Tweet</div>
+        </div>
+        <!--Transition-->
+        <div class="w-full h-2 border-t border-b bg-gray-400"> </div>
+        <!---->
+        <!---->
+
+        <!--SingleTweet-->
+        <article class="tweet  w-full border-b border-gray-400 p-2">
+
+            <div class="flex text-gray-300 mb-4">
+                <!---->
+                <i class="fas fa-retweet mr-2 relative top-little3"></i>
+                <p>El Fuego retweeted</p>
+                <!---->
+            </div>
+
+            <!---->
+            <div class=" text-white">
+                <div class="rounded-full bg-art bg-cover w-8 h-8 mr-2 float-left"></div>
+                <!--Tweet title-->
+                <p>El Fuego <span class="text-gray-600">@nendoSendsei</span></p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officia cumque est laborum sunt rem magni nobis maiores earum delectus!</p>
+
+                <img class=" w-72 h-40 rounded-2xl my-2" src="images/purge.jpg" alt="ElfuegoTweet">
+
+            </div>
+            <!---->
+        </article>
+
+        <!--SingleTweet-->
+        <article class="tweet  w-full border-b border-gray-400 p-2">
+
+            <div class="flex text-gray-300 mb-4">
+                <!---->
+                <i class="fas fa-retweet mr-2 relative top-little3"></i>
+                <p>Juan deLafoy retweeted</p>
+                <!---->
+            </div>
+
+            <!---->
+            <div class=" text-white">
+                <div class="rounded-full bg-military bg-cover w-8 h-8 mr-2 float-left"></div>
+                <!--Tweet title-->
+                <p>Juan deLafoy<span class="text-gray-600"> @RoySezity</span></p>
+                <br>
+                <p>Donald Trump s'est fait viré! sit amet consectetur adipisicing elit. Enim officia cumque est laborum sunt rem magni nobis maiores earum delectus!</p>
+                <video class=" w-72 h-40 rounded-2xl my-2" mute autoplay src="media/usa.mp4"></video>
+
+            </div>
+            <!---->
+        </article>
+
+        <!--SingleTweet-->
+        <article class="tweet  w-full border-b border-gray-400 p-2">
+
+            <!---->
+            <div class=" text-white">
+                <div class="rounded-full bg-people2 bg-cover w-8 h-8 mr-2 float-left"></div>
+                <!--Tweet title-->
+                <p>Marine344<span class="text-gray-600"> @Marine344</span></p>
+                <br>
+                <p>La mer était sweet! sit amet consectetur adipisicing elit.</p>
+                <img class=" w-72 h-40 rounded-2xl my-2" src="images/water.jpg" alt="Marine344tweet">
+
+            </div>
+            <!---->
+        </article>
+
+
+        </div>
+
+    </section>
+    <!----->
+    <!---->
+    <!--Trends and More-->
+    <section class="hidden border-l border-gray-700 p-2 md:block w-4/12">
+        <div class="w-11/12 h-10 bg-red-200 rounded-3xl flex">
+            <svg class="w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            <input class="h-full w-10/12" type="search">
+
+        </div>
+        <!----->
+        <!---->
+        <div></div>
+        <!---->
+        <!---->
+        <div></div>
+
+    </section>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+</body>
+
+</html>
