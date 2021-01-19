@@ -7,6 +7,8 @@ module.exports = {
                 'art': "url('/public/images/art.jpg')",
                 'people': "url('/public/images/people.jpg')",
                 'people2': "url('/public/images/people2.jpg')",
+                'people3': "url('/public/images/people3.jpg')",
+                'people4': "url('/public/images/people4.jpg')",
                 'military': "url('/public/images/military.jpg')",
             }),
             colors: {

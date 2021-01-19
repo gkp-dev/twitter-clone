@@ -4266,6 +4266,14 @@ video {
   background-image: url('/public/images/people2.jpg');
 }
 
+.bg-people3 {
+  background-image: url('/public/images/people3.jpg');
+}
+
+.bg-people4 {
+  background-image: url('/public/images/people4.jpg');
+}
+
 .bg-military {
   background-image: url('/public/images/military.jpg');
 }
@@ -35183,6 +35191,14 @@ video {
     background-image: url('/public/images/people2.jpg');
   }
 
+  .sm\:bg-people3 {
+    background-image: url('/public/images/people3.jpg');
+  }
+
+  .sm\:bg-people4 {
+    background-image: url('/public/images/people4.jpg');
+  }
+
   .sm\:bg-military {
     background-image: url('/public/images/military.jpg');
   }
@@ -66020,6 +66036,14 @@ video {
 
   .md\:bg-people2 {
     background-image: url('/public/images/people2.jpg');
+  }
+
+  .md\:bg-people3 {
+    background-image: url('/public/images/people3.jpg');
+  }
+
+  .md\:bg-people4 {
+    background-image: url('/public/images/people4.jpg');
   }
 
   .md\:bg-military {
@@ -96861,6 +96885,14 @@ video {
     background-image: url('/public/images/people2.jpg');
   }
 
+  .lg\:bg-people3 {
+    background-image: url('/public/images/people3.jpg');
+  }
+
+  .lg\:bg-people4 {
+    background-image: url('/public/images/people4.jpg');
+  }
+
   .lg\:bg-military {
     background-image: url('/public/images/military.jpg');
   }
@@ -127700,6 +127732,14 @@ video {
     background-image: url('/public/images/people2.jpg');
   }
 
+  .xl\:bg-people3 {
+    background-image: url('/public/images/people3.jpg');
+  }
+
+  .xl\:bg-people4 {
+    background-image: url('/public/images/people4.jpg');
+  }
+
   .xl\:bg-military {
     background-image: url('/public/images/military.jpg');
   }
@@ -158537,6 +158577,14 @@ video {
 
   .\32xl\:bg-people2 {
     background-image: url('/public/images/people2.jpg');
+  }
+
+  .\32xl\:bg-people3 {
+    background-image: url('/public/images/people3.jpg');
+  }
+
+  .\32xl\:bg-people4 {
+    background-image: url('/public/images/people4.jpg');
   }
 
   .\32xl\:bg-military {

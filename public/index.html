@@ -14,48 +14,48 @@
 <body class="bg-twitterBlue flex text-poppins">
 
     <!--NavBar-->
-    <section class=" text-center pt-2 w-2/12 h-screen border-r border-gray-700 md:w-1/12">
-        <div class="relative w-full h-full">
+    <section class="sticky top-0 pt-2 w-2/12 h-screen border-r border-gray-700 md:w-1/12 lg:w-3/12">
+        <div class="relative w-full h-full grid justify-items-center ">
             <!--Icon-->
             <div>
                 <i class="my-2 fab fa-twitter text-3xl text-white cursor-pointer transition-colors duration-300 ease-in-out hover:text-blue-400"></i>
             </div>
 
-            <div class="text-3xl text-blue-400 cursor-pointer">
-                <i class="my-2 fas fa-home"></i>
-                <span class="text-xl font-bold hidden">Home</span>
+            <div class=" h-14 text-3xl text-blue-400 -my-10 cursor-pointer">
+                <i class="inline my-2 fas fa-home"></i>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Home</span>
             </div>
 
-            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
                 <i class="my-2 fas fa-hashtag "></i>
-                <span class="text-xl font-bold hidden">Explore</span>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Explore</span>
             </div>
 
 
-            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
                 <i class="my-2 fas fa-bell "></i>
-                <span class="text-xl font-bold hidden">Notification</span>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Notification</span>
             </div>
 
-            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
                 <i class="my-2 fas fas fa-envelope "></i>
-                <span class="text-xl font-bold hidden">Messages</span>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Messages</span>
             </div>
 
-            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
                 <i class="my-2 fas fa-file-alt "></i>
-                <span class="text-xl font-bold hidden">Lists</span>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Lists</span>
             </div>
 
 
-            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
                 <i class="my-2 fas fa-user "></i>
-                <span class="text-xl font-bold hidden">Profile</span>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">Profile</span>
             </div>
 
-            <div class="text-3xl text-white cursor-pointer hover:text-blue-400">
+            <div class="text-3xl h-14 text-white cursor-pointer -my-10 hover:text-blue-400">
                 <i class="my-2 fas fa-ellipsis-h "></i>
-                <span class="text-xl font-bold hidden">More</span>
+                <span class="text-xl font-bold hidden lg:inline relative bottom-2.5">More</span>
             </div>
 
 
@@ -64,10 +64,10 @@
     </section>
 
     <!--Tweet-->
-    <section class="w-10/12 md:w-7/12">
+    <section class="w-10/12 md:w-7/12 text-xl">
         <!--Header-->
         <div class="p-2 flex justify-between border-b border-gray-50">
-            <h2 class="font-bold text-white text-xl">Home</h2>
+            <h2 class="font-bold text-white text-xl lg:text-2xl">Home</h2>
             <div>
                 <svg class="w-6 h-6 text-blue-400 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -171,20 +171,143 @@
     <!----->
     <!---->
     <!--Trends and More-->
-    <section class="hidden border-l border-gray-700 p-2 md:block w-4/12">
-        <div class="w-11/12 h-10 bg-red-200 rounded-3xl flex">
-            <svg class="w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <section class="hidden h-screen sticky top-0 border-l border-gray-700 p-2 md:block  w-4/12 ">
+        <div class="max-w-xl grid justify-items-center">
+            <div class="w-11/12 h-10 border border-gray-400 text-white rounded-3xl flex p-1.5">
+                <svg class="w-6 h-6 text-gray-500 mr-1.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            <input class="h-full w-10/12" type="search">
+                <input class="h-full w-10/12 bg-transparent relative bottom-little" placeholder="Search" type="search">
+
+            </div>
+            <!----->
+            <!---->
+            <!--Trend-->
+            <div class="w-11/12 border border-gray-400 text-white rounded-3xl my-4">
+                <h2 class="font-bold text-2xl p-2">Trends For You</h2>
+
+                <!--One Trend-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div>
+                        <h4 class="font-bold text-base">#TonyTonyChopper</h4>
+                        <p class="text-gray-400 relative left-2">598.9K Tweets</p>
+                    </div>
+                    <!---->
+                    <div>
+                        <svg class="w-6 h-6 cursor-pointer text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                    </svg>
+                    </div>
+                </div>
+                <!---->
+                <!--One Trend-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div>
+                        <h4 class="font-bold text-base">#La Madre</h4>
+                        <p class="text-gray-400 relative left-2">1.9b Tweets</p>
+                    </div>
+                    <!---->
+                    <div>
+                        <svg class="w-6 h-6 cursor-pointer text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                    </svg>
+                    </div>
+                </div>
+                <!---->
+                <!--One Trend-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div>
+                        <h4 class="font-bold text-base">#Versache</h4>
+                        <p class="text-gray-400 relative left-2">1.2m Tweets</p>
+                    </div>
+                    <!---->
+                    <div>
+                        <svg class="w-6 h-6 cursor-pointer text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                    </svg>
+                    </div>
+                </div>
+                <!---->
+                <!--One Trend-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div>
+                        <h4 class="font-bold text-base">Nesrine</h4>
+                        <p class="text-gray-400 relative left-2">2.9m Tweets</p>
+                    </div>
+                    <!---->
+                    <div>
+                        <svg class="w-6 h-6 cursor-pointer text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                    </svg>
+                    </div>
+                </div>
+                <!---->
+                <!--One Trend-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div>
+                        <h4 class="font-bold text-base">#La Capitole</h4>
+                        <p class="text-gray-400 relative left-2">25.9m Tweets</p>
+                    </div>
+                    <!---->
+                    <div>
+                        <svg class="w-6 h-6 cursor-pointer text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                    </svg>
+                    </div>
+                </div>
+                <!---->
+
+
+            </div>
+            <!---->
+            <!---->
+            <!--Who to follow-->
+            <div class="w-11/12 border border-gray-400 text-white rounded-3xl  my-4">
+                <h2 class="font-bold text-2xl p-2">Who to follow</h2>
+
+                <!--To Follow-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div class="flex">
+                        <div class="rounded-full bg-people3 bg-cover w-8 h-8 mr-0.5 float-left"></div>
+                        <div>
+                            <h4 class="font-bold text-base relative left-2">MarinaDentras</h4>
+                            <p class="text-gray-400 relative left-2">@MarinaDentr34</p>
+                        </div>
+                    </div>
+                    <!---->
+                    <span class=" w-14 h-8  border-2 text-center border-blue-400 text-blue-400 bg-transparent rounded-3xl cursor-pointer">
+                    Follow
+                </span>
+                </div>
+                <!---->
+                <!--To Follow-->
+                <div class="flex justify-between border-t-2 border-gray-100 p-2">
+                    <!---->
+                    <div class="flex">
+                        <div class="rounded-full bg-people4 bg-cover w-8 h-8 mr-0.5 float-left"></div>
+                        <div>
+                            <h4 class="font-bold text-base relative left-2">Philipe67</h4>
+                            <p class="text-gray-400 relative left-2">@Philipe67</p>
+                        </div>
+                    </div>
+                    <!---->
+                    <span class=" w-14 h-8  border-2 text-center border-blue-400 text-blue-400 bg-transparent rounded-3xl cursor-pointer">
+                    Follow
+                </span>
+                </div>
+                <!---->
+
+            </div>
+            <!---->
+
+
 
         </div>
-        <!----->
-        <!---->
-        <div></div>
-        <!---->
-        <!---->
-        <div></div>
-
     </section>
 
 
